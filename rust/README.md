@@ -37,7 +37,7 @@ async fn main() -> Result<(), Error> {
         "OCI_CRED",
     );
     
-    let config = aws_config::from_env()
+    let config = ConfigLoader::default()
         .region(Region::new("ap-seoul-1"))
         .credentials_provider(credential)
         .endpoint_url("https://sehubjapacprod.compat.objectstorage.ap-seoul-1.oraclecloud.com")
@@ -53,7 +53,6 @@ async fn main() -> Result<(), Error> {
     batch_delete(&client, bucket).await?;
 
     Ok(())
-
 }
 
 async fn list_objects(client: &Client, bucket: &str) -> Result<(), Error> {
