@@ -1,0 +1,9 @@
+workspace 'ocis3test'
+platform :ios, '11.1'
+
+
+target 'ocis3test' do
+  use_frameworks!
+  pod 'AWSCore', '=2.16.0'
+  pod 'AWSS3', '=2.16.0'
+end

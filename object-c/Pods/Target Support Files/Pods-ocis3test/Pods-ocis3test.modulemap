@@ -1,0 +1,6 @@
+framework module Pods_ocis3test {
+  umbrella header "Pods-ocis3test-umbrella.h"
+
+  export *
+  module * { export * }
+}

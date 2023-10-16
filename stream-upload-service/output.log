@@ -1,0 +1,933 @@
+2023-07-07 12:04:38,342 - oss_append - DEBUG - * 20230707120438.342625 - Enter <function run at 0x7f49e1feb400>, (), {}
+2023-07-07 12:04:54,656 - oss_append - DEBUG - * 20230707120454.656193 - Enter <function write_bytes at 0x7f49e1feb1c0>, (), {}
+2023-07-07 12:04:54,661 - oss_append - DEBUG - file_name: video3.mp4
+2023-07-07 12:04:54,662 - oss_append - DEBUG - file_position: 339616, 0
+2023-07-07 12:04:54,662 - oss_append - DEBUG - append: 1
+2023-07-07 12:04:54,662 - oss_utils - DEBUG - * 20230707120454.662281 - Enter <function ensure_file_exists at 0x7f49e43f2c20>, (), {'file_name': 'video3.mp4'}
+2023-07-07 12:04:54,662 - oss_utils - DEBUG - * 20230707120454.662281 - Exit <function ensure_file_exists at 0x7f49e43f2c20>
+2023-07-07 12:04:54,662 - oss_append - DEBUG - Write content to file. file_position: 339616, 0
+2023-07-07 12:04:54,663 - oss_append - DEBUG - * 20230707120454.656193 - Exit <function write_bytes at 0x7f49e1feb1c0>
+2023-07-07 12:05:10,900 - oss_append - DEBUG - * 20230707120510.900160 - Enter <function write_bytes at 0x7f49e1feb1c0>, (), {}
+2023-07-07 12:05:10,905 - oss_append - DEBUG - file_name: video5.mp4
+2023-07-07 12:05:10,905 - oss_append - DEBUG - file_position: 0, 0
+2023-07-07 12:05:10,905 - oss_append - DEBUG - append: 1
+2023-07-07 12:05:10,905 - oss_utils - DEBUG - * 20230707120510.905783 - Enter <function ensure_file_exists at 0x7f49e43f2c20>, (), {'file_name': 'video5.mp4'}
+2023-07-07 12:05:10,906 - oss_utils - DEBUG - * 20230707120510.905783 - Exit <function ensure_file_exists at 0x7f49e43f2c20>
+2023-07-07 12:05:10,906 - oss_append - DEBUG - Write content to file. file_position: 0, 0
+2023-07-07 12:05:10,906 - oss_append - DEBUG - * 20230707120510.900160 - Exit <function write_bytes at 0x7f49e1feb1c0>
+2023-07-07 12:08:17,720 - oss_append - DEBUG - * 20230707120817.720920 - Enter <function write_bytes at 0x7f49e1feb1c0>, (), {}
+2023-07-07 12:08:17,725 - oss_append - DEBUG - file_name: video6.mp4
+2023-07-07 12:08:17,726 - oss_append - DEBUG - file_position: 0, 0
+2023-07-07 12:08:17,726 - oss_append - DEBUG - append: 1
+2023-07-07 12:08:17,726 - oss_utils - DEBUG - * 20230707120817.726437 - Enter <function ensure_file_exists at 0x7f49e43f2c20>, (), {'file_name': 'video6.mp4'}
+2023-07-07 12:08:17,726 - oss_utils - DEBUG - * 20230707120817.726437 - Exit <function ensure_file_exists at 0x7f49e43f2c20>
+2023-07-07 12:08:17,726 - oss_append - DEBUG - Write content to file. file_position: 0, 0
+2023-07-07 12:08:17,727 - oss_append - DEBUG - * 20230707120817.720920 - Exit <function write_bytes at 0x7f49e1feb1c0>
+2023-07-07 13:26:06,916 - oss_append - DEBUG - * 20230707132606.916807 - Enter <function run at 0x7f70d3328a60>, (), {}
+2023-07-07 13:26:38,437 - oss_append - DEBUG - * 20230707132638.437721 - Enter <function write_video at 0x7f70d3328820>, (), {}
+2023-07-07 13:26:38,438 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 13:26:38,438 - oss_append - DEBUG - * 20230707132638.437721 - Exit <function write_video at 0x7f70d3328820>
+2023-07-07 13:26:38,438 - oss_append - ERROR - Exception on /append-movie [POST]
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/devlog/my_logger.py", line 101, in wrapper
+    return func_name(*args, **kwargs)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/oss_append.py", line 130, in write_video
+    logger.debug('file_position: %d, %d', file_position, whence)
+NameError: name 'file_position' is not defined
+2023-07-07 13:27:11,738 - oss_append - DEBUG - * 20230707132711.738931 - Enter <function run at 0x7fd29b6b4a60>, (), {}
+2023-07-07 13:27:19,720 - oss_append - DEBUG - * 20230707132719.720467 - Enter <function write_video at 0x7fd29b6b4820>, (), {}
+2023-07-07 13:27:19,721 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 13:27:19,721 - oss_append - DEBUG - append: 1
+2023-07-07 13:27:19,721 - oss_utils - DEBUG - * 20230707132719.721640 - Enter <function ensure_file_exists at 0x7fd29c9c6c20>, (), {'file_name': 'video8.mp4'}
+2023-07-07 13:27:19,722 - oss_utils - DEBUG - * 20230707132719.721640 - Exit <function ensure_file_exists at 0x7fd29c9c6c20>
+2023-07-07 13:27:19,856 - oss_append - DEBUG - * 20230707132719.720467 - Exit <function write_video at 0x7fd29b6b4820>
+2023-07-07 13:27:19,856 - oss_append - ERROR - Exception on /append-movie [POST]
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 285, in ffmpeg_parse_infos
+    line = [l for l in lines if keyword in l][index]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/devlog/my_logger.py", line 101, in wrapper
+    return func_name(*args, **kwargs)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/oss_append.py", line 139, in write_video
+    exist_clips = VideoFileClip(file_fullname)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/VideoFileClip.py", line 88, in __init__
+    self.reader = FFMPEG_VideoReader(filename, pix_fmt=pix_fmt,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 35, in __init__
+    infos = ffmpeg_parse_infos(filename, print_infos, check_duration,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 289, in ffmpeg_parse_infos
+    raise IOError(("MoviePy error: failed to read the duration of file %s.\n"
+OSError: MoviePy error: failed to read the duration of file /var/tmp/ossappend/video8.mp4.
+Here are the file infos returned by ffmpeg:
+
+ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8 (Debian 8.3.0-6)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7438540] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x7438540] moov atom not found
+/var/tmp/ossappend/video8.mp4: Invalid data found when processing input
+
+2023-07-07 13:28:07,297 - oss_append - DEBUG - * 20230707132807.297344 - Enter <function run at 0x7f8cf9518a60>, (), {}
+2023-07-07 13:28:19,416 - oss_append - DEBUG - * 20230707132819.416191 - Enter <function write_mp4 at 0x7f8cf9518820>, (), {}
+2023-07-07 13:28:19,416 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 13:28:19,416 - oss_append - DEBUG - append: 1
+2023-07-07 13:28:19,417 - oss_utils - DEBUG - * 20230707132819.416993 - Enter <function ensure_file_exists at 0x7f8cfa81ac20>, (), {'file_name': 'video8.mp4'}
+2023-07-07 13:28:19,417 - oss_utils - DEBUG - * 20230707132819.416993 - Exit <function ensure_file_exists at 0x7f8cfa81ac20>
+2023-07-07 13:28:19,550 - oss_append - DEBUG - * 20230707132819.416191 - Exit <function write_mp4 at 0x7f8cf9518820>
+2023-07-07 13:28:19,551 - oss_append - ERROR - Exception on /append-mp4 [POST]
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 285, in ffmpeg_parse_infos
+    line = [l for l in lines if keyword in l][index]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/devlog/my_logger.py", line 101, in wrapper
+    return func_name(*args, **kwargs)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/oss_append.py", line 139, in write_mp4
+    exist_clips = VideoFileClip(file_fullname)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/VideoFileClip.py", line 88, in __init__
+    self.reader = FFMPEG_VideoReader(filename, pix_fmt=pix_fmt,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 35, in __init__
+    infos = ffmpeg_parse_infos(filename, print_infos, check_duration,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 289, in ffmpeg_parse_infos
+    raise IOError(("MoviePy error: failed to read the duration of file %s.\n"
+OSError: MoviePy error: failed to read the duration of file /var/tmp/ossappend/video8.mp4.
+Here are the file infos returned by ffmpeg:
+
+ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8 (Debian 8.3.0-6)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6a3e540] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x6a3e540] moov atom not found
+/var/tmp/ossappend/video8.mp4: Invalid data found when processing input
+
+2023-07-07 14:00:07,101 - oss_append - DEBUG - * 20230707140007.101611 - Enter <function run at 0x7fdecda04a60>, (), {}
+2023-07-07 14:01:04,953 - oss_append - DEBUG - * 20230707140104.953355 - Enter <function write_mp4 at 0x7fdecda04820>, (), {}
+2023-07-07 14:01:04,953 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 14:01:04,954 - oss_append - DEBUG - append: 1
+2023-07-07 14:01:04,954 - oss_utils - DEBUG - * 20230707140104.954335 - Enter <function ensure_file_exists at 0x7fdeced12c20>, (), {'file_name': 'video8.mp4'}
+2023-07-07 14:01:04,954 - oss_utils - DEBUG - * 20230707140104.954335 - Exit <function ensure_file_exists at 0x7fdeced12c20>
+2023-07-07 14:01:05,081 - oss_append - DEBUG - * 20230707140104.953355 - Exit <function write_mp4 at 0x7fdecda04820>
+2023-07-07 14:01:05,081 - oss_append - ERROR - Exception on /append-mp4 [POST]
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 285, in ffmpeg_parse_infos
+    line = [l for l in lines if keyword in l][index]
+IndexError: list index out of range
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/devlog/my_logger.py", line 101, in wrapper
+    return func_name(*args, **kwargs)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/oss_append.py", line 141, in write_mp4
+    exist_clips = VideoFileClip(file_fullname)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/VideoFileClip.py", line 88, in __init__
+    self.reader = FFMPEG_VideoReader(filename, pix_fmt=pix_fmt,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 35, in __init__
+    infos = ffmpeg_parse_infos(filename, print_infos, check_duration,
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py", line 289, in ffmpeg_parse_infos
+    raise IOError(("MoviePy error: failed to read the duration of file %s.\n"
+OSError: MoviePy error: failed to read the duration of file /var/tmp/ossappend/video8.mp4.
+Here are the file infos returned by ffmpeg:
+
+ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8 (Debian 8.3.0-6)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x61a0540] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x61a0540] moov atom not found
+/var/tmp/ossappend/video8.mp4: Invalid data found when processing input
+
+2023-07-07 14:10:41,672 - oss_append - DEBUG - * 20230707141041.672915 - Enter <function run at 0x7ffad1d94a60>, (), {}
+2023-07-07 14:11:23,550 - oss_append - DEBUG - * 20230707141123.550379 - Enter <function write_mp4 at 0x7ffad1d94820>, (), {}
+2023-07-07 14:11:23,550 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 14:11:23,551 - oss_append - DEBUG - append: 1
+2023-07-07 14:11:23,551 - oss_append - DEBUG - * 20230707141123.550379 - Exit <function write_mp4 at 0x7ffad1d94820>
+2023-07-07 14:11:23,551 - oss_append - ERROR - Exception on /append-mp4 [POST]
+Traceback (most recent call last):
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/devlog/my_logger.py", line 101, in wrapper
+    return func_name(*args, **kwargs)
+  File "/home/hysunhe/projects/aijianvideo/oss_append/oss_append.py", line 133, in write_mp4
+    oss_utils.ensure_dir_exists(file_name=file_fullname)
+TypeError: ensure_dir_exists() got an unexpected keyword argument 'file_name'
+2023-07-07 14:12:23,720 - oss_append - DEBUG - * 20230707141223.720607 - Enter <function run at 0x7fe149afca60>, (), {}
+2023-07-07 14:12:28,054 - oss_append - DEBUG - * 20230707141228.054152 - Enter <function write_mp4 at 0x7fe149afc820>, (), {}
+2023-07-07 14:12:28,054 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 14:12:28,054 - oss_append - DEBUG - append: 1
+2023-07-07 14:12:28,177 - oss_append - WARNING - MoviePy error: failed to read the duration of file /var/tmp/ossappend/video8.mp4.
+Here are the file infos returned by ffmpeg:
+
+ffmpeg version 4.2.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2019 the FFmpeg developers
+  built with gcc 8 (Debian 8.3.0-6)
+  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg
+  libavutil      56. 31.100 / 56. 31.100
+  libavcodec     58. 54.100 / 58. 54.100
+  libavformat    58. 29.100 / 58. 29.100
+  libavdevice    58.  8.100 / 58.  8.100
+  libavfilter     7. 57.100 /  7. 57.100
+  libswscale      5.  5.100 /  5.  5.100
+  libswresample   3.  5.100 /  3.  5.100
+  libpostproc    55.  5.100 / 55.  5.100
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x5c61540] Format mov,mp4,m4a,3gp,3g2,mj2 detected only with low score of 1, misdetection possible!
+[mov,mp4,m4a,3gp,3g2,mj2 @ 0x5c61540] moov atom not found
+/var/tmp/ossappend/video8.mp4: Invalid data found when processing input
+
+2023-07-07 14:12:28,831 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video8.mp4_1688710348.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:29,144 - oss_append - DEBUG - * 20230707141228.054152 - Exit <function write_mp4 at 0x7fe149afc820>
+2023-07-07 14:12:53,348 - oss_append - DEBUG - * 20230707141253.348038 - Enter <function write_mp4 at 0x7fe149afc820>, (), {}
+2023-07-07 14:12:53,348 - oss_append - DEBUG - file_name: video8.mp4
+2023-07-07 14:12:53,348 - oss_append - DEBUG - append: 1
+2023-07-07 14:12:54,166 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 14/31, at time 7.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,176 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 15/31, at time 7.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,187 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 16/31, at time 8.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,202 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 17/31, at time 8.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,215 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 18/31, at time 9.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,229 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 19/31, at time 9.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,245 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 20/31, at time 10.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,263 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 21/31, at time 10.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,284 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 22/31, at time 11.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,301 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 23/31, at time 11.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,317 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 24/31, at time 12.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,333 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 25/31, at time 12.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,355 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 26/31, at time 13.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,368 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 27/31, at time 13.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,384 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 28/31, at time 14.00/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,397 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video8.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/31, at time 14.50/15.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:54,968 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video8.mp4_1688710373.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:12:55,464 - oss_append - DEBUG - * 20230707141253.348038 - Exit <function write_mp4 at 0x7fe149afc820>
+2023-07-07 14:14:22,735 - oss_append - DEBUG - * 20230707141422.735416 - Enter <function run at 0x7f6acabfca60>, (), {}
+2023-07-07 14:14:43,542 - oss_append - DEBUG - * 20230707141443.542637 - Enter <function write_mp4 at 0x7f6acabfc820>, (), {}
+2023-07-07 14:14:43,543 - oss_append - DEBUG - file_name: video9.mp4
+2023-07-07 14:14:43,543 - oss_append - DEBUG - append: 1
+2023-07-07 14:14:43,664 - oss_utils - DEBUG - * 20230707141443.664431 - Enter <function delete_file at 0x7f6acbf06d40>, ('/var/tmp/ossappend/video9.mp4',), {}
+2023-07-07 14:14:43,664 - oss_utils - DEBUG - * 20230707141443.664431 - Exit <function delete_file at 0x7f6acbf06d40>
+2023-07-07 14:14:44,315 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video9.mp4_1688710483.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:14:44,654 - oss_append - DEBUG - * 20230707141443.542637 - Exit <function write_mp4 at 0x7f6acabfc820>
+2023-07-07 14:14:49,045 - oss_append - DEBUG - * 20230707141449.045216 - Enter <function write_mp4 at 0x7f6acabfc820>, (), {}
+2023-07-07 14:14:49,045 - oss_append - DEBUG - file_name: video9.mp4
+2023-07-07 14:14:49,045 - oss_append - DEBUG - append: 1
+2023-07-07 14:14:49,274 - oss_utils - DEBUG - * 20230707141449.274628 - Enter <function delete_file at 0x7f6acbf06d40>, ('/var/tmp/ossappend/video9.mp4',), {}
+2023-07-07 14:14:49,275 - oss_utils - DEBUG - * 20230707141449.274628 - Exit <function delete_file at 0x7f6acbf06d40>
+2023-07-07 14:14:50,580 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video9.mp4_1688710489.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:14:51,072 - oss_append - DEBUG - * 20230707141449.045216 - Exit <function write_mp4 at 0x7f6acabfc820>
+2023-07-07 14:14:56,901 - oss_append - DEBUG - * 20230707141456.901307 - Enter <function write_mp4 at 0x7f6acabfc820>, (), {}
+2023-07-07 14:14:56,901 - oss_append - DEBUG - file_name: video9.mp4
+2023-07-07 14:14:56,902 - oss_append - DEBUG - append: 1
+2023-07-07 14:14:57,132 - oss_utils - DEBUG - * 20230707141457.132049 - Enter <function delete_file at 0x7f6acbf06d40>, ('/var/tmp/ossappend/video9.mp4',), {}
+2023-07-07 14:14:57,132 - oss_utils - DEBUG - * 20230707141457.132049 - Exit <function delete_file at 0x7f6acbf06d40>
+2023-07-07 14:14:59,426 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video9.mp4_1688710496.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:14:59,902 - oss_append - DEBUG - * 20230707141456.901307 - Exit <function write_mp4 at 0x7f6acabfc820>
+2023-07-07 14:34:32,918 - oss_append - DEBUG - * 20230707143432.918289 - Enter <function write_mp4 at 0x7f6acabfc820>, (), {}
+2023-07-07 14:34:32,918 - oss_append - DEBUG - file_name: video10.mp4
+2023-07-07 14:34:32,919 - oss_append - DEBUG - append: 1
+2023-07-07 14:34:33,043 - oss_utils - DEBUG - * 20230707143433.043476 - Enter <function delete_file at 0x7f6acbf06d40>, ('/var/tmp/ossappend/video10.mp4',), {}
+2023-07-07 14:34:33,043 - oss_utils - DEBUG - * 20230707143433.043476 - Exit <function delete_file at 0x7f6acbf06d40>
+2023-07-07 14:34:33,699 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video10.mp4_1688711672.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:34:34,008 - oss_append - DEBUG - * 20230707143432.918289 - Exit <function write_mp4 at 0x7f6acabfc820>
+2023-07-07 14:34:57,059 - oss_append - DEBUG - * 20230707143457.059343 - Enter <function write_mp4 at 0x7f6acabfc820>, (), {}
+2023-07-07 14:34:57,059 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 14:34:57,059 - oss_append - DEBUG - append: 1
+2023-07-07 14:34:57,181 - oss_utils - DEBUG - * 20230707143457.181746 - Enter <function delete_file at 0x7f6acbf06d40>, ('/var/tmp/ossappend/video11.mp4',), {}
+2023-07-07 14:34:57,182 - oss_utils - DEBUG - * 20230707143457.181746 - Exit <function delete_file at 0x7f6acbf06d40>
+2023-07-07 14:34:57,831 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video11.mp4_1688711697.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:34:58,134 - oss_append - DEBUG - * 20230707143457.059343 - Exit <function write_mp4 at 0x7f6acabfc820>
+2023-07-07 14:41:28,021 - oss_append - DEBUG - * 20230707144128.020975 - Enter <function run at 0x7f87517a8d30>, (), {}
+2023-07-07 14:41:32,315 - oss_append - DEBUG - * 20230707144132.315202 - Enter <function write_mp4_json at 0x7f87517a88b0>, (), {}
+2023-07-07 14:41:32,317 - oss_append - DEBUG - file_name: video88.mp4
+2023-07-07 14:41:32,317 - oss_append - DEBUG - append: 1
+2023-07-07 14:41:32,442 - oss_utils - DEBUG - * 20230707144132.442793 - Enter <function delete_file at 0x7f8752aded40>, ('/var/tmp/ossappend/video88.mp4',), {}
+2023-07-07 14:41:32,443 - oss_utils - DEBUG - * 20230707144132.442793 - Exit <function delete_file at 0x7f8752aded40>
+2023-07-07 14:41:33,111 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video88.mp4_1688712092.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:41:33,416 - oss_append - DEBUG - * 20230707144132.315202 - Exit <function write_mp4_json at 0x7f87517a88b0>
+2023-07-07 14:41:38,079 - oss_append - DEBUG - * 20230707144138.079103 - Enter <function write_mp4_json at 0x7f87517a88b0>, (), {}
+2023-07-07 14:41:38,081 - oss_append - DEBUG - file_name: video88.mp4
+2023-07-07 14:41:38,081 - oss_append - DEBUG - append: 1
+2023-07-07 14:41:38,315 - oss_utils - DEBUG - * 20230707144138.315189 - Enter <function delete_file at 0x7f8752aded40>, ('/var/tmp/ossappend/video88.mp4',), {}
+2023-07-07 14:41:38,315 - oss_utils - DEBUG - * 20230707144138.315189 - Exit <function delete_file at 0x7f8752aded40>
+2023-07-07 14:41:39,605 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video88.mp4_1688712098.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:41:40,087 - oss_append - DEBUG - * 20230707144138.079103 - Exit <function write_mp4_json at 0x7f87517a88b0>
+2023-07-07 14:41:41,583 - oss_append - DEBUG - * 20230707144141.583205 - Enter <function write_mp4_json at 0x7f87517a88b0>, (), {}
+2023-07-07 14:41:41,584 - oss_append - DEBUG - file_name: video88.mp4
+2023-07-07 14:41:41,585 - oss_append - DEBUG - append: 1
+2023-07-07 14:41:41,801 - oss_utils - DEBUG - * 20230707144141.800981 - Enter <function delete_file at 0x7f8752aded40>, ('/var/tmp/ossappend/video88.mp4',), {}
+2023-07-07 14:41:41,801 - oss_utils - DEBUG - * 20230707144141.800981 - Exit <function delete_file at 0x7f8752aded40>
+2023-07-07 14:41:44,073 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video88.mp4_1688712101.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 14:41:44,526 - oss_append - DEBUG - * 20230707144141.583205 - Exit <function write_mp4_json at 0x7f87517a88b0>
+2023-07-07 15:56:56,224 - oss_append - DEBUG - * 20230707155656.224657 - Enter <function write_mp4_json at 0x7f87517a88b0>, (), {}
+2023-07-07 15:56:56,226 - oss_append - DEBUG - file_name: video88.mp4
+2023-07-07 15:56:56,226 - oss_append - DEBUG - append: 1
+2023-07-07 15:56:56,441 - oss_utils - DEBUG - * 20230707155656.441721 - Enter <function delete_file at 0x7f8752aded40>, ('/var/tmp/ossappend/video88.mp4',), {}
+2023-07-07 15:56:56,442 - oss_utils - DEBUG - * 20230707155656.441721 - Exit <function delete_file at 0x7f8752aded40>
+2023-07-07 15:56:59,596 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video88.mp4_1688716616.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 15:57:00,242 - oss_append - DEBUG - * 20230707155656.224657 - Exit <function write_mp4_json at 0x7f87517a88b0>
+2023-07-07 15:57:22,363 - oss_append - DEBUG - * 20230707155722.363720 - Enter <function run at 0x7f9733318f70>, (), {}
+2023-07-07 15:57:30,717 - oss_append - DEBUG - * 20230707155730.717286 - Enter <function write_mp4_json at 0x7f9733318a60>, (), {}
+2023-07-07 15:57:30,719 - oss_append - DEBUG - file_name: video88.mp4
+2023-07-07 15:57:30,720 - oss_append - DEBUG - append: 1
+2023-07-07 15:57:30,947 - oss_utils - DEBUG - * 20230707155730.947000 - Enter <function delete_file at 0x7f9734636d40>, ('/var/tmp/ossappend/video88.mp4',), {}
+2023-07-07 15:57:30,947 - oss_utils - DEBUG - * 20230707155730.947000 - Exit <function delete_file at 0x7f9734636d40>
+2023-07-07 15:57:34,727 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video88.mp4_1688716650.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 15:57:35,144 - oss_append - DEBUG - * 20230707155730.717286 - Exit <function write_mp4_json at 0x7f9733318a60>
+2023-07-07 15:57:41,832 - oss_append - DEBUG - * 20230707155741.832560 - Enter <function write_bytes at 0x7f9733318820>, (), {}
+2023-07-07 15:57:41,833 - oss_append - DEBUG - file_name: video6.mp4
+2023-07-07 15:57:41,833 - oss_append - DEBUG - file_position: 0, 0
+2023-07-07 15:57:41,833 - oss_append - DEBUG - append: 1
+2023-07-07 15:57:41,834 - oss_append - DEBUG - Write content to file. file_position: 0, 0
+2023-07-07 15:57:41,835 - oss_append - DEBUG - * 20230707155741.832560 - Exit <function write_bytes at 0x7f9733318820>
+2023-07-07 15:57:44,053 - oss_append - DEBUG - * 20230707155744.053345 - Enter <function write_bytes at 0x7f9733318820>, (), {}
+2023-07-07 15:57:44,053 - oss_append - DEBUG - file_name: video6.mp4
+2023-07-07 15:57:44,054 - oss_append - DEBUG - file_position: 0, 0
+2023-07-07 15:57:44,054 - oss_append - DEBUG - append: 1
+2023-07-07 15:57:44,054 - oss_append - DEBUG - Write content to file. file_position: 0, 0
+2023-07-07 15:57:44,054 - oss_append - DEBUG - * 20230707155744.053345 - Exit <function write_bytes at 0x7f9733318820>
+2023-07-07 15:58:03,636 - oss_append - DEBUG - * 20230707155803.636193 - Enter <function write_bytes at 0x7f9733318820>, (), {}
+2023-07-07 15:58:03,636 - oss_append - DEBUG - file_name: video20.mp4
+2023-07-07 15:58:03,636 - oss_append - DEBUG - file_position: 0, 0
+2023-07-07 15:58:03,636 - oss_append - DEBUG - append: 1
+2023-07-07 15:58:03,637 - oss_append - DEBUG - Write content to file. file_position: 0, 0
+2023-07-07 15:58:03,637 - oss_append - DEBUG - * 20230707155803.636193 - Exit <function write_bytes at 0x7f9733318820>
+2023-07-07 15:58:18,616 - oss_append - DEBUG - * 20230707155818.616378 - Enter <function write_mp4 at 0x7f9733318ca0>, (), {}
+2023-07-07 15:58:18,616 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 15:58:18,616 - oss_append - DEBUG - append: 1
+2023-07-07 15:58:18,855 - oss_utils - DEBUG - * 20230707155818.855014 - Enter <function delete_file at 0x7f9734636d40>, ('/var/tmp/ossappend/video11.mp4',), {}
+2023-07-07 15:58:18,855 - oss_utils - DEBUG - * 20230707155818.855014 - Exit <function delete_file at 0x7f9734636d40>
+2023-07-07 15:58:20,141 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video11.mp4_1688716698.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 15:58:20,629 - oss_append - DEBUG - * 20230707155818.616378 - Exit <function write_mp4 at 0x7f9733318ca0>
+2023-07-07 19:24:28,047 - oss_append - DEBUG - * 20230707192428.047929 - Enter <function run at 0x7f99d851cf70>, (), {}
+2023-07-07 19:24:40,232 - oss_append - DEBUG - * 20230707192440.232156 - Enter <function write_mp4 at 0x7f99d851cca0>, (), {}
+2023-07-07 19:24:40,232 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 19:24:40,232 - oss_append - DEBUG - append: 1
+2023-07-07 19:24:40,569 - oss_utils - DEBUG - * 20230707192440.569800 - Enter <function delete_file at 0x7f99d982ad40>, ('/var/tmp/ossappend/video11.mp4',), {}
+2023-07-07 19:24:40,570 - oss_utils - DEBUG - * 20230707192440.569800 - Exit <function delete_file at 0x7f99d982ad40>
+2023-07-07 19:24:42,695 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video11.mp4_1688729080.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:24:43,166 - oss_append - DEBUG - * 20230707192440.232156 - Exit <function write_mp4 at 0x7f99d851cca0>
+2023-07-07 19:29:37,348 - oss_append - DEBUG - * 20230707192937.348788 - Enter <function write_mp4 at 0x7f99d851cca0>, (), {}
+2023-07-07 19:29:37,350 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 19:29:37,350 - oss_append - DEBUG - append: 1
+2023-07-07 19:29:37,594 - oss_utils - DEBUG - * 20230707192937.594710 - Enter <function delete_file at 0x7f99d982ad40>, ('/var/tmp/ossappend/video11.mp4',), {}
+2023-07-07 19:29:37,595 - oss_utils - DEBUG - * 20230707192937.594710 - Exit <function delete_file at 0x7f99d982ad40>
+2023-07-07 19:29:40,506 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /tmp/video11.mp4_1688729377.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/30, at time 14.50/14.66 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:29:40,960 - oss_append - DEBUG - * 20230707192937.348788 - Exit <function write_mp4 at 0x7f99d851cca0>
+2023-07-07 19:31:22,029 - oss_append - DEBUG - * 20230707193122.029812 - Enter <function run at 0x7fb6d4a1ce50>, (), {}
+2023-07-07 19:31:30,807 - oss_append - DEBUG - * 20230707193130.807722 - Enter <function write_mp4 at 0x7fb6d4a1cb80>, (), {}
+2023-07-07 19:31:30,808 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 19:31:30,808 - oss_append - DEBUG - append: 1
+2023-07-07 19:31:32,469 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 14/121, at time 7.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,481 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 15/121, at time 7.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,496 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 16/121, at time 8.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,517 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 17/121, at time 8.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,535 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 18/121, at time 9.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,550 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 19/121, at time 9.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,573 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 20/121, at time 10.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,587 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 21/121, at time 10.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,607 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 22/121, at time 11.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,616 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 23/121, at time 11.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,633 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 24/121, at time 12.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,647 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 25/121, at time 12.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,667 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 26/121, at time 13.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,685 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 27/121, at time 13.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,704 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 28/121, at time 14.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,727 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 29/121, at time 14.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,751 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 30/121, at time 15.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,766 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 31/121, at time 15.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,782 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 32/121, at time 16.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,802 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 33/121, at time 16.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,829 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 34/121, at time 17.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,847 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 35/121, at time 17.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,867 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 36/121, at time 18.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,885 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 37/121, at time 18.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,897 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 38/121, at time 19.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,915 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 39/121, at time 19.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,929 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 40/121, at time 20.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,945 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 41/121, at time 20.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,958 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 42/121, at time 21.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,976 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 43/121, at time 21.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:32,995 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 44/121, at time 22.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,013 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 45/121, at time 22.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,032 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 46/121, at time 23.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,056 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 47/121, at time 23.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,073 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 48/121, at time 24.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,092 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 49/121, at time 24.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,103 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 50/121, at time 25.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,122 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 51/121, at time 25.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,134 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 52/121, at time 26.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,156 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 53/121, at time 26.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,170 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 54/121, at time 27.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,192 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 55/121, at time 27.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,261 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 56/121, at time 28.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,279 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 57/121, at time 28.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,306 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 58/121, at time 29.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,324 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 59/121, at time 29.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,360 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 60/121, at time 30.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,386 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 61/121, at time 30.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,420 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 62/121, at time 31.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,449 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 63/121, at time 31.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,476 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 64/121, at time 32.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,497 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 65/121, at time 32.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,537 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 66/121, at time 33.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,562 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 67/121, at time 33.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,585 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 68/121, at time 34.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,617 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 69/121, at time 34.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,645 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 70/121, at time 35.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,667 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 71/121, at time 35.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,703 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 72/121, at time 36.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,727 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 73/121, at time 36.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,752 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 74/121, at time 37.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,782 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 75/121, at time 37.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,806 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 76/121, at time 38.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,830 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 77/121, at time 38.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,865 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 78/121, at time 39.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,899 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 79/121, at time 39.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,922 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 80/121, at time 40.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,935 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 81/121, at time 40.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,964 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 82/121, at time 41.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:33,991 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 83/121, at time 41.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,010 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 84/121, at time 42.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,037 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 85/121, at time 42.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,071 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 86/121, at time 43.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,090 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 87/121, at time 43.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,130 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 88/121, at time 44.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,147 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 89/121, at time 44.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,167 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 90/121, at time 45.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,205 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 91/121, at time 45.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,235 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 92/121, at time 46.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,261 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 93/121, at time 46.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,284 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 94/121, at time 47.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,328 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 95/121, at time 47.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,359 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 96/121, at time 48.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,387 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 97/121, at time 48.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,413 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 98/121, at time 49.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,450 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 99/121, at time 49.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,471 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 100/121, at time 50.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,513 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 101/121, at time 50.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,543 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 102/121, at time 51.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,562 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 103/121, at time 51.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,590 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 104/121, at time 52.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,615 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 105/121, at time 52.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,647 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 106/121, at time 53.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,666 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 107/121, at time 53.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,697 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 108/121, at time 54.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,718 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 109/121, at time 54.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,756 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 110/121, at time 55.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,784 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 111/121, at time 55.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,803 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 112/121, at time 56.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,830 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 113/121, at time 56.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,859 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 114/121, at time 57.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,887 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 115/121, at time 57.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,908 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 116/121, at time 58.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,931 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 117/121, at time 58.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,970 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 118/121, at time 59.00/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:34,991 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 119/121, at time 59.50/60.00 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:31:37,192 - oss_append - DEBUG - * 20230707193130.807722 - Exit <function write_mp4 at 0x7fb6d4a1cb80>
+2023-07-07 19:32:49,094 - oss_append - DEBUG - * 20230707193249.094141 - Enter <function run at 0x7fdf94e14e50>, (), {}
+2023-07-07 19:32:53,651 - oss_append - DEBUG - * 20230707193253.651467 - Enter <function write_mp4 at 0x7fdf94e14b80>, (), {}
+2023-07-07 19:32:53,652 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 19:32:53,652 - oss_append - DEBUG - append: 1
+2023-07-07 19:32:59,303 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 210/211, at time 105.00/105.04 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:33:01,698 - oss_append - DEBUG - * 20230707193253.651467 - Exit <function write_mp4 at 0x7fdf94e14b80>
+2023-07-07 19:35:20,489 - oss_append - DEBUG - * 20230707193520.489837 - Enter <function run at 0x7fc401c00e50>, (), {}
+2023-07-07 19:35:28,510 - oss_append - DEBUG - * 20230707193528.510397 - Enter <function write_mp4 at 0x7fc401c00b80>, (), {}
+2023-07-07 19:35:28,511 - oss_append - DEBUG - file_name: video11.mp4
+2023-07-07 19:35:28,511 - oss_append - DEBUG - append: 1
+2023-07-07 19:35:36,337 - py.warnings - WARNING - /home/hysunhe/anaconda3/envs/oss/lib/python3.10/site-packages/moviepy/video/io/ffmpeg_reader.py:123: UserWarning: Warning: in file /var/tmp/ossappend/video11.mp4, 6220800 bytes wanted but 0 bytes read,at frame 210/211, at time 105.00/105.04 sec. Using the last valid frame instead.
+  warnings.warn("Warning: in file %s, "%(self.filename)+
+
+2023-07-07 19:35:36,903 - oss_append - DEBUG - * 20230707193528.510397 - Exit <function write_mp4 at 0x7fc401c00b80>
+2023-07-24 11:24:10,975 - oss_utils - DEBUG - * 20230724112410.975304 - Enter <function gen_auth_md5 at 0x7f69dd734ee0>, ('20230724T023712Z',), {}
+2023-07-24 11:24:10,976 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 11:24:10,977 - oss_utils - DEBUG - * 20230724112410.975304 - Exit <function gen_auth_md5 at 0x7f69dd734ee0>
+2023-07-24 11:25:34,043 - oss_utils - DEBUG - * 20230724112534.042998 - Enter <function gen_auth_md5 at 0x7f6ec0a34ee0>, ('20230724T023712Z',), {}
+2023-07-24 11:25:34,043 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 11:25:34,043 - oss_utils - DEBUG - * 20230724112534.042998 - Exit <function gen_auth_md5 at 0x7f6ec0a34ee0>
+2023-07-24 11:26:02,322 - oss_utils - DEBUG - * 20230724112602.322879 - Enter <function gen_auth_md5 at 0x7fdf97f30ee0>, ('20230724T023712Z',), {}
+2023-07-24 11:26:02,323 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 11:26:02,323 - oss_utils - DEBUG - * 20230724112602.322879 - Exit <function gen_auth_md5 at 0x7fdf97f30ee0>
+2023-07-24 11:26:40,736 - oss_utils - DEBUG - * 20230724112640.736887 - Enter <function gen_auth_md5 at 0x7f3725990ee0>, ('20230724T023712Z',), {}
+2023-07-24 11:26:40,737 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 11:26:40,737 - oss_utils - DEBUG - * 20230724112640.736887 - Exit <function gen_auth_md5 at 0x7f3725990ee0>
+2023-07-24 12:08:19,239 - oss_utils - DEBUG - * 20230724120819.239805 - Enter <function gen_auth_md5 at 0x7feba051feb0>, ('20230724T023712Z',), {}
+2023-07-24 12:08:19,240 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 12:08:19,240 - oss_utils - DEBUG - * 20230724120819.239805 - Exit <function gen_auth_md5 at 0x7feba051feb0>
+2023-07-24 12:08:19,241 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-24 12:08:19,527 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=demo2.bin&position=0&append=1 HTTP/1.1" 200 57
+2023-07-24 12:09:25,257 - oss_utils - DEBUG - * 20230724120925.257374 - Enter <function gen_auth_md5 at 0x7fe013053eb0>, ('20230724T023712Z',), {}
+2023-07-24 12:09:25,257 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 12:09:25,258 - oss_utils - DEBUG - * 20230724120925.257374 - Exit <function gen_auth_md5 at 0x7fe013053eb0>
+2023-07-24 12:09:25,259 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-24 12:09:25,530 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=demo2.bin&position=0&append=1 HTTP/1.1" 401 12
+2023-07-24 12:09:48,036 - oss_utils - DEBUG - * 20230724120948.036549 - Enter <function gen_auth_md5 at 0x7f1ba54a7eb0>, ('20230724T023712Z',), {}
+2023-07-24 12:09:48,036 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 12:09:48,037 - oss_utils - DEBUG - * 20230724120948.036549 - Exit <function gen_auth_md5 at 0x7f1ba54a7eb0>
+2023-07-24 12:09:48,038 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-24 12:09:48,299 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=demo2.bin&position=0&append=1 HTTP/1.1" 401 12
+2023-07-24 12:10:57,359 - oss_utils - DEBUG - * 20230724121057.359949 - Enter <function gen_auth_md5 at 0x7f9ca3a97f40>, ('20230724T023712Z',), {}
+2023-07-24 12:10:57,360 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-24 12:10:57,360 - oss_utils - DEBUG - * 20230724121057.359949 - Exit <function gen_auth_md5 at 0x7f9ca3a97f40>
+2023-07-24 12:10:57,361 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-24 12:10:57,725 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=demo2.bin&position=0&append=1 HTTP/1.1" 401 12
+2023-07-25 17:03:33,760 - oss_utils - DEBUG - * 20230725170333.760489 - Enter <function gen_auth_md5 at 0x7f6057770e50>, ('20230724T023712Z',), {}
+2023-07-25 17:03:33,761 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:03:33,761 - oss_utils - DEBUG - * 20230725170333.760489 - Exit <function gen_auth_md5 at 0x7f6057770e50>
+2023-07-25 17:03:53,234 - oss_utils - DEBUG - * 20230725170353.234183 - Enter <function gen_auth_md5 at 0x7f0a97a1ce50>, ('20230724T023712Z',), {}
+2023-07-25 17:03:53,234 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:03:53,234 - oss_utils - DEBUG - * 20230725170353.234183 - Exit <function gen_auth_md5 at 0x7f0a97a1ce50>
+2023-07-25 17:04:14,686 - oss_utils - DEBUG - * 20230725170414.686670 - Enter <function gen_auth_md5 at 0x7f5a092e0e50>, ('20230724T023712Z',), {}
+2023-07-25 17:04:14,686 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:04:14,687 - oss_utils - DEBUG - * 20230725170414.686670 - Exit <function gen_auth_md5 at 0x7f5a092e0e50>
+2023-07-25 17:04:25,821 - oss_utils - DEBUG - * 20230725170425.821436 - Enter <function gen_auth_md5 at 0x7fce320a4e50>, ('20230724T023712Z',), {}
+2023-07-25 17:04:25,821 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:04:25,822 - oss_utils - DEBUG - * 20230725170425.821436 - Exit <function gen_auth_md5 at 0x7fce320a4e50>
+2023-07-25 17:07:34,758 - oss_utils - DEBUG - * 20230725170734.758356 - Enter <function gen_auth_md5 at 0x7f419a8f8e50>, ('20230724T023712Z',), {}
+2023-07-25 17:07:34,758 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:07:34,758 - oss_utils - DEBUG - * 20230725170734.758356 - Exit <function gen_auth_md5 at 0x7f419a8f8e50>
+2023-07-25 17:07:51,042 - oss_utils - DEBUG - * 20230725170751.042455 - Enter <function gen_auth_md5 at 0x7f4c85aa4e50>, ('20230724T023712Z',), {}
+2023-07-25 17:07:51,042 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:07:51,043 - oss_utils - DEBUG - * 20230725170751.042455 - Exit <function gen_auth_md5 at 0x7f4c85aa4e50>
+2023-07-25 17:08:02,940 - oss_utils - DEBUG - * 20230725170802.940821 - Enter <function gen_auth_md5 at 0x7ffb3ac38e50>, ('20230724T023712Z',), {}
+2023-07-25 17:08:02,941 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:08:02,941 - oss_utils - DEBUG - * 20230725170802.940821 - Exit <function gen_auth_md5 at 0x7ffb3ac38e50>
+2023-07-25 17:08:24,482 - oss_utils - DEBUG - * 20230725170824.482439 - Enter <function gen_auth_md5 at 0x7f33f1960e50>, ('20230724T023712Z',), {}
+2023-07-25 17:08:24,483 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:08:24,483 - oss_utils - DEBUG - * 20230725170824.482439 - Exit <function gen_auth_md5 at 0x7f33f1960e50>
+2023-07-25 17:08:48,035 - oss_utils - DEBUG - * 20230725170848.035525 - Enter <function gen_auth_md5 at 0x7fd5c2d54e50>, ('20230724T023712Z',), {}
+2023-07-25 17:08:48,035 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:08:48,036 - oss_utils - DEBUG - * 20230725170848.035525 - Exit <function gen_auth_md5 at 0x7fd5c2d54e50>
+2023-07-25 17:13:16,609 - oss_utils - DEBUG - * 20230725171316.609143 - Enter <function gen_auth_md5 at 0x7fa135090e50>, ('20230724T023712Z',), {}
+2023-07-25 17:13:16,609 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:13:16,609 - oss_utils - DEBUG - * 20230725171316.609143 - Exit <function gen_auth_md5 at 0x7fa135090e50>
+2023-07-25 17:13:23,074 - oss_utils - DEBUG - * 20230725171323.074923 - Enter <function gen_auth_md5 at 0x7f675cc1ce50>, ('20230724T023712Z',), {}
+2023-07-25 17:13:23,075 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:13:23,075 - oss_utils - DEBUG - * 20230725171323.074923 - Exit <function gen_auth_md5 at 0x7f675cc1ce50>
+2023-07-25 17:13:30,705 - oss_utils - DEBUG - * 20230725171330.705207 - Enter <function gen_auth_md5 at 0x7fb17d780e50>, ('20230724T023712Z',), {}
+2023-07-25 17:13:30,705 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:13:30,705 - oss_utils - DEBUG - * 20230725171330.705207 - Exit <function gen_auth_md5 at 0x7fb17d780e50>
+2023-07-25 17:14:12,037 - oss_utils - DEBUG - * 20230725171412.037619 - Enter <function gen_auth_md5 at 0x7f6c7dc64e50>, ('20230724T023712Z',), {}
+2023-07-25 17:14:12,037 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:14:12,038 - oss_utils - DEBUG - * 20230725171412.037619 - Exit <function gen_auth_md5 at 0x7f6c7dc64e50>
+2023-07-25 17:15:25,061 - oss_utils - DEBUG - * 20230725171525.061416 - Enter <function gen_auth_md5 at 0x7f56d50fcee0>, ('20230724T023712Z',), {}
+2023-07-25 17:15:25,061 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:15:25,062 - oss_utils - DEBUG - * 20230725171525.061416 - Exit <function gen_auth_md5 at 0x7f56d50fcee0>
+2023-07-25 17:30:09,343 - oss_utils - DEBUG - * 20230725173009.343722 - Enter <function gen_auth_md5 at 0x7f108e000e50>, ('20230724T023712Z',), {}
+2023-07-25 17:30:09,344 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:30:09,344 - oss_utils - DEBUG - * 20230725173009.343722 - Exit <function gen_auth_md5 at 0x7f108e000e50>
+2023-07-25 17:30:21,384 - oss_utils - DEBUG - * 20230725173021.384210 - Enter <function gen_auth_md5 at 0x7f197224ce50>, ('20230724T023712Z',), {}
+2023-07-25 17:30:21,384 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:30:21,385 - oss_utils - DEBUG - * 20230725173021.384210 - Exit <function gen_auth_md5 at 0x7f197224ce50>
+2023-07-25 17:30:32,273 - oss_utils - DEBUG - * 20230725173032.273254 - Enter <function gen_auth_md5 at 0x7fd6a43c0e50>, ('20230724T023712Z',), {}
+2023-07-25 17:30:32,273 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:30:32,273 - oss_utils - DEBUG - * 20230725173032.273254 - Exit <function gen_auth_md5 at 0x7fd6a43c0e50>
+2023-07-25 17:30:39,452 - oss_utils - DEBUG - * 20230725173039.452295 - Enter <function gen_auth_md5 at 0x7fcfaa138e50>, ('20230724T023712Z',), {}
+2023-07-25 17:30:39,452 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:30:39,452 - oss_utils - DEBUG - * 20230725173039.452295 - Exit <function gen_auth_md5 at 0x7fcfaa138e50>
+2023-07-25 17:35:50,562 - oss_utils - DEBUG - * 20230725173550.562711 - Enter <function gen_auth_md5 at 0x7f07361dce50>, ('20230724T023712Z',), {}
+2023-07-25 17:35:50,562 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:35:50,563 - oss_utils - DEBUG - * 20230725173550.562711 - Exit <function gen_auth_md5 at 0x7f07361dce50>
+2023-07-25 17:36:05,080 - oss_utils - DEBUG - * 20230725173605.080348 - Enter <function gen_auth_md5 at 0x7fef151c0e50>, ('20230724T023712Z',), {}
+2023-07-25 17:36:05,080 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:36:05,080 - oss_utils - DEBUG - * 20230725173605.080348 - Exit <function gen_auth_md5 at 0x7fef151c0e50>
+2023-07-25 17:59:54,163 - oss_utils - DEBUG - * 20230725175954.162969 - Enter <function gen_auth_md5 at 0x7febf483beb0>, ('20230724T023712Z',), {}
+2023-07-25 17:59:54,163 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:59:54,163 - oss_utils - DEBUG - * 20230725175954.162969 - Exit <function gen_auth_md5 at 0x7febf483beb0>
+2023-07-25 17:59:54,175 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 17:59:54,477 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-07-25 17:59:59,245 - oss_utils - DEBUG - * 20230725175959.245453 - Enter <function gen_auth_md5 at 0x7efe76e87eb0>, ('20230724T023712Z',), {}
+2023-07-25 17:59:59,245 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 17:59:59,246 - oss_utils - DEBUG - * 20230725175959.245453 - Exit <function gen_auth_md5 at 0x7efe76e87eb0>
+2023-07-25 17:59:59,247 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 17:59:59,519 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-07-25 18:00:05,017 - oss_utils - DEBUG - * 20230725180005.017247 - Enter <function gen_auth_md5 at 0x7f5a8a527eb0>, ('20230724T023712Z',), {}
+2023-07-25 18:00:05,017 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:00:05,017 - oss_utils - DEBUG - * 20230725180005.017247 - Exit <function gen_auth_md5 at 0x7f5a8a527eb0>
+2023-07-25 18:00:05,019 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:00:05,295 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-07-25 18:00:09,900 - oss_utils - DEBUG - * 20230725180009.900416 - Enter <function gen_auth_md5 at 0x7f44fd6cfe20>, ('20230724T023712Z',), {}
+2023-07-25 18:00:09,900 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:00:09,901 - oss_utils - DEBUG - * 20230725180009.900416 - Exit <function gen_auth_md5 at 0x7f44fd6cfe20>
+2023-07-25 18:00:09,902 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:00:10,176 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-07-25 18:00:17,054 - oss_utils - DEBUG - * 20230725180017.054670 - Enter <function gen_auth_md5 at 0x7f4add2e7e20>, ('20230724T023712Z',), {}
+2023-07-25 18:00:17,054 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:00:17,055 - oss_utils - DEBUG - * 20230725180017.054670 - Exit <function gen_auth_md5 at 0x7f4add2e7e20>
+2023-07-25 18:00:17,056 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:00:18,303 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 149
+2023-07-25 18:00:41,763 - oss_utils - DEBUG - * 20230725180041.763313 - Enter <function gen_auth_md5 at 0x7f466431beb0>, ('20230724T023712Z',), {}
+2023-07-25 18:00:41,763 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:00:41,764 - oss_utils - DEBUG - * 20230725180041.763313 - Exit <function gen_auth_md5 at 0x7f466431beb0>
+2023-07-25 18:00:41,765 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:00:42,040 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-07-25 18:07:19,336 - oss_utils - DEBUG - * 20230725180719.336005 - Enter <function gen_auth_md5 at 0x7f10533f7eb0>, ('20230724T023712Z',), {}
+2023-07-25 18:07:19,336 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:07:19,336 - oss_utils - DEBUG - * 20230725180719.336005 - Exit <function gen_auth_md5 at 0x7f10533f7eb0>
+2023-07-25 18:07:19,339 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:07:19,612 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=yyy/demo2.bin&position=0&append=1 HTTP/1.1" 200 57
+2023-07-25 18:07:28,624 - oss_utils - DEBUG - * 20230725180728.624158 - Enter <function gen_auth_md5 at 0x7f8a874e3eb0>, ('20230724T023712Z',), {}
+2023-07-25 18:07:28,624 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:07:28,624 - oss_utils - DEBUG - * 20230725180728.624158 - Exit <function gen_auth_md5 at 0x7f8a874e3eb0>
+2023-07-25 18:07:28,626 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:07:28,886 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=yyy/demo2.bin&position=30&append=1 HTTP/1.1" 200 57
+2023-07-25 18:07:39,227 - oss_utils - DEBUG - * 20230725180739.227556 - Enter <function gen_auth_md5 at 0x7f9e8ae6beb0>, ('20230724T023712Z',), {}
+2023-07-25 18:07:39,227 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:07:39,228 - oss_utils - DEBUG - * 20230725180739.227556 - Exit <function gen_auth_md5 at 0x7f9e8ae6beb0>
+2023-07-25 18:07:39,229 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:07:40,424 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=yyy/demo2.bin&position=60&append=0 HTTP/1.1" 200 147
+2023-07-25 18:08:00,993 - oss_utils - DEBUG - * 20230725180800.993876 - Enter <function gen_auth_md5 at 0x7fa39d02beb0>, ('20230724T023712Z',), {}
+2023-07-25 18:08:00,994 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-07-25 18:08:00,994 - oss_utils - DEBUG - * 20230725180800.993876 - Exit <function gen_auth_md5 at 0x7fa39d02beb0>
+2023-07-25 18:08:00,996 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-07-25 18:08:01,277 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=yyy/demo3.bin&position=0&append=1 HTTP/1.1" 200 57
+2023-08-01 13:09:43,338 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-08-01 13:09:43,341 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-08-01 13:09:43,617 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-bytes?bucket=test&name=yyy/demo3.bin&position=0&append=1 HTTP/1.1" 200 57
+2023-08-01 13:11:40,277 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-08-01 13:11:40,278 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-08-01 13:11:40,541 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 57
+2023-08-01 13:12:02,671 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-08-01 13:12:02,672 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-08-01 13:12:03,085 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 149
+2023-08-01 13:31:12,311 - oci.config - DEBUG - Config file found at ~/.oci/config
+2023-08-01 13:31:12,313 - urllib3.connectionpool - DEBUG - Starting new HTTP connection (1): 158.178.240.219:5000
+2023-08-01 13:31:12,806 - urllib3.connectionpool - DEBUG - http://158.178.240.219:5000 "POST /write-json HTTP/1.1" 200 149
