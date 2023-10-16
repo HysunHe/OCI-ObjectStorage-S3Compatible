@@ -32,7 +32,7 @@ Nodejs 样例程序位于 [rust/](rust/) 子目录下。Rust 样例程序演示�
 
 ### .Net语言样例
 
-.Net 样例程序位于 [.net/](.net/) 子目录下。.net 样例程序演示了如何使用OCI信息配置AWS S3 .net SDK，并且实现了获取和显示 Bucket 列表的功能。关键是如何利用OCI信息配置AWS S3 SDK，如果需要实现更多的功能，那么直接参考AWS S3 SDK的官方文档中的实例代码即可。
+.Net 样例程序位于 [dotnet/](dotnet/) 子目录下。.net 样例程序演示了如何使用OCI信息配置AWS S3 .net SDK，并且实现了获取和显示 Bucket 列表的功能。关键是如何利用OCI信息配置AWS S3 SDK，如果需要实现更多的功能，那么直接参考AWS S3 SDK的官方文档中的实例代码即可。
 
 ### C语言样例
 
@@ -40,7 +40,7 @@ C 样例程序位于 [c/](c/OSS-Demo/ObjectStorageDemo/) 子目录下。C 样例
 
 ### C++语言样例
 
-C++ 样例程序位于 [c++/](c++/) 子目录下。C++ 样例程序演示了如何使用OCI信息配置AWS S3 C++ SDK，并且实现了文件下载、文件上传、分块上传的功能。关键是如何利用OCI信息配置AWS S3 SDK，如果需要实现更多的功能，那么直接参考AWS S3 SDK的官方文档中的实例代码即可。
+C++ 样例程序位于 [cpp/](cpp/) 子目录下。C++ 样例程序演示了如何使用OCI信息配置AWS S3 C++ SDK，并且实现了文件下载、文件上传、分块上传的功能。关键是如何利用OCI信息配置AWS S3 SDK，如果需要实现更多的功能，那么直接参考AWS S3 SDK的官方文档中的实例代码即可。
 
 ### Objective-C语言样例
 
