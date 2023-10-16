@@ -4,7 +4,7 @@
 
 相比其它云厂商，AWS S3 是最早流行的对象存储云服务，因此，很多用户的应用程序早已是基于 S3 客户端实现。Oracle OCI 的对象存储服务也支持S3客户端协议，可以直接使用 AWS S3 SDK API 或 AWS S3 REST API 对 OCI 对象存储进行操作。
 
-目前提供了使用 **10** 种语言的S3 SDK/API操作OCI对象存储的样例，包括 C，C++, Python, Java, Go, Nodejs, .Net, Objective-C, PHP
+目前提供了使用 **10** 种语言的S3 SDK/API操作OCI对象存储的样例，包括 C，C++, Python, Java, Go, Nodejs, Rust, .Net, Objective-C, PHP
 
 另外，由于 AWS S3 SDK 没有提供类似阿里云对象存储的流式上传接口，因此，我们实现一个单独的服务并向外提供 REST 接口，客户端直接调用此接口实现流式上传（如视频流文件的上传）。
 
